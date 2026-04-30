@@ -1,31 +1,29 @@
-# 📈 Stock Price Checker
+## Summary
 
-A simple stock price checker API and frontend built with Node.js and Express.  
-Users can check stock prices and like stocks anonymously.
+Fixed the stock price API issue and frontend display bug.
 
----
+## Changes
 
-## 🚀 Features
+- Fixed stock API response handling
+- Corrected frontend data path from `data.price` to `data.stockData.price`
+- Added cache-busting for `script.js`
+- Fixed undefined values showing in frontend
+- Updated README documentation
 
-- Get real-time stock prices
-- Like a stock (1 like per IP)
-- Compare two stocks with relative likes
-- Clean frontend UI
-- FreeCodeCamp compatible API
+## Issue Fixed
 
----
+Closes #<issue-number>
 
-## 🛠️ Tech Stack
+## Testing
 
-- Node.js
-- Express
-- Fetch API
-- Vanilla JavaScript (Frontend)
+Tested locally with:
 
----
+- `/api/stock-prices?stock=AAPL`
+- `/api/stock-prices?stock=AAPL&like=true`
+- `/api/stock-prices?stock=AAPL&stock=GOOG`
 
-## 📡 API Endpoint
+Frontend now displays:
 
-### GET `/api/stock-prices`
-
-#### Single Stock
+- Stock symbol
+- Stock price
+- Likes / relative likes
