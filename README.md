@@ -27,3 +27,7 @@ Frontend now displays:
 - Stock symbol
 - Stock price
 - Likes / relative likes
+## 🌐 Live Demo
+
+Check the live app here:  
+👉 https://stock-price-checker-z55i.onrender.com/
