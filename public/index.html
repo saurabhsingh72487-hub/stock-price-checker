@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Price Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Stock Price Checker</h1>
+      <p>Check stock prices and like your favorite stocks!</p>
+    </header>
+
+    <main>
+      <section class="input-section">
+        <div class="input-group">
+          <input type="text" id="stock1" placeholder="Enter stock symbol (e.g., AAPL)" maxlength="10">
+          <label>
+            <input type="checkbox" id="like1"> Like
+          </label>
+        </div>
+
+        <div class="input-group">
+          <input type="text" id="stock2" placeholder="Enter another stock symbol (optional)">
+          <label>
+            <input type="checkbox" id="like2" disabled> Like
+          </label>
+        </div>
+
+        <button id="checkBtn">Check</button>
+      </section>
+
+      <section id="results" class="results-section hidden">
+        <h2>Results</h2>
+        <div id="stockResults"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./script.js?v=10"></script>
+</body>
+</html>
