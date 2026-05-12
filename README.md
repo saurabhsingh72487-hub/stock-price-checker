@@ -3,7 +3,6 @@
 Fixed the stock price API issue and frontend display bug.
 
 ## Changes
-
 - Fixed stock API response handling
 - Corrected frontend data path from `data.price` to `data.stockData.price`
 - Added cache-busting for `script.js`
